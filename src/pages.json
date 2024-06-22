@@ -1,0 +1,35 @@
+{
+	"globalStyle": {
+		"backgroundColor": "@bgColor",
+		"backgroundColorBottom": "@bgColorBottom",
+		"backgroundColorTop": "@bgColorTop",
+		"backgroundTextStyle": "@bgTxtStyle",
+		"navigationBarBackgroundColor": "@navBgColor",
+		"navigationBarTextStyle": "@navTxtStyle",
+		"navigationStyle": "default"
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "default"
+
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登陆"
+			}
+		}
+	],
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^U(.*)": "~/components/UnoUI/U$1/U$1.vue",
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	}
+}
